@@ -89,7 +89,7 @@ Then build using:
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
     make
 
-If the compilation process shows that there are some unknown references, change to the posix implementation as stated in the following [dash issue](https://github.com/dashpay/dash/issues/1751).
+If the compilation process shows that there are some unknown references, change to the posix implementation as stated in the following [dash issue](https://github.com/polispay/dash/issues/1751).
 
 Commands
 
