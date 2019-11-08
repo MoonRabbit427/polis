@@ -95,7 +95,7 @@ Credits
 
 Thanks to who contributed to this release, at least:
 
-- eduffield
+- epolitoshiield
 - UdjinM6
 - vertoe
 - mkinney
