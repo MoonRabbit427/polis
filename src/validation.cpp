@@ -2445,13 +2445,13 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
                     // TODO: relay instantsend data/proof.
                     LOCK(cs_main);
                     mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
-                    return state.DoS(10, error("ConnectBlock(DASH): transaction %s conflicts with transaction lock %s", tx->GetHash().ToString(), hashLocked.ToString()),
+                    return state.DoS(10, error("ConnectBlock(POLIS): transaction %s conflicts with transaction lock %s", tx->GetHash().ToString(), hashLocked.ToString()),
                                      REJECT_INVALID, "conflict-tx-lock");
                 }
             }
         }
     } else {
-        LogPrintf("ConnectBlock(DASH): spork is off, skipping transaction locking checks\n");
+        LogPrintf("ConnectBlock(POLIS): spork is off, skipping transaction locking checks\n");
     }
 
     CAmount expectedReward = pindex->nHeight == Params().GetConsensus().nLastPoWBlock + 5
