@@ -928,7 +928,6 @@ QString loadStyleSheet()
     if (qFile.open(QFile::ReadOnly)) {
         styleSheet = QLatin1String(qFile.readAll());
     }
-
     return styleSheet;
 }
 
